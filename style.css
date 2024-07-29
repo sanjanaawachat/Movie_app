@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(117, 224, 128); */
+     background: linear-gradient(rgb(117, 224, 128),pink,rgb(138, 138, 227),rgb(219, 147, 121));
+}
+
+.logo {
+
+    display: inline-block;
+}
+
+.logo img {
+    width: 100%;
+    padding: 20px;
+}
+
+.card{
+    background-color: rgb(7, 7, 7);
+    display:block;
+    margin-bottom: 50px;
+    border-radius: 15px 17px;
+
+
+}
+
+.moviecard {
+    height: 550px;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+
+.moviecard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movietitle {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.movieOverview{
+    position: absolute;
+    background-image: rgb(175, 224, 240);
+    background-image: linear-gradient(to right, rgb(238, 243, 243), rgb(142, 134, 142));
+    color:black; 
+    bottom: 0px;
+    top: 45%;
+    left: 0px;
+    right: 0px;
+    opacity: 0.8;
+    transform: translateY(120%);
+    
+    transition: all .4s ease-in-out; 
+    overflow-y: auto;
+    
+}
+
+.moviecard:hover .movieOverview{
+    transform: translateY(0%);
+  
+}
+
+input{
+    background-image: linear-gradient(to right, rgb(153, 238, 238), rgb(160, 207, 238));
+  
+}
